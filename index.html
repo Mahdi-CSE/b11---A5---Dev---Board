@@ -9,9 +9,377 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .utility-btn {
+        color: white;
+        background-color: #3752fd;
+        font-weight: 500;
+        border-radius: 10px;
+      }
+      .history {
+        padding: 12px;
+        background-color: #F4F7FF;
+        color: #000000;
+        opacity: 0.7;
+        border-radius: 17px;
+        margin-bottom: 12px;
+      }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <h1>hello</h1>
+  <body class="bg-[#F4F7FF] font-poppins">
+    <!-- header starts here -->
+    <header class="w-[90%] mx-auto pt-6">
+      <!-- navbar section starts here -->
+      <section
+        class="flex justify-between bg-white rounded-xl items-center px-6 py-4"
+      >
+        <!-- logo area starts -->
+        <div class="flex justify-between items-center gap-2">
+          <img src="assets/logo.png" alt="Logo of the Company" />
+          <p class="text-4xl">
+            Dev<span class="text-[#00303C] font-bold">Board</span>
+          </p>
+        </div>
+        <!-- logo area ends -->
+        <div class="flex justify-between items-center gap-10">
+          <!-- completed tasks starts -->
+          <div
+            class="flex justify-between items-center gap-3 bg-[#F4F7FF] rounded-3xl px-4 py-2"
+          >
+            <img src="assets/checkbox.png" alt="Image of a Checkbox" />
+            <p class="text-3xl font-semibold">9</p>
+          </div>
+          <!-- completed tasks ends -->
+          <!-- random background starts -->
+          <div>
+            <button class="bg-[#F4F7FF] rounded-full">
+              <img
+                class="p-2"
+                src="assets/theme-btn.png"
+                alt="Button to change background"
+              />
+            </button>
+          </div>
+          <!-- random background ends -->
+        </div>
+      </section>
+      <!-- navbar section ends here -->
+    </header>
+    <!-- header ends here -->
+    <!-- main starts here -->
+    <main class="w-[90%] mx-auto grid grid-cols-4 gap-5 mt-5">
+      <!-- task section starts here -->
+      <section class="col-span-3 bg-white rounded-xl">
+        <!-- task assigned board starts here -->
+        <div class="flex justify-between items-center px-5 py-4">
+          <!-- number of assigned task starts -->
+          <div class="bg-[#F4F7FF] flex items-center gap-4 p-4 rounded-xl">
+            <div class="bg-[#FFFFFF] rounded-full">
+              <img
+                class="p-3"
+                src="assets/checkbox.png"
+                alt="image of the checkbox"
+              />
+            </div>
+            <div>
+              <p class="text-[#00303C] text-lg font-medium">Task Assigned</p>
+              <p class="text-3xl font-bold text-[#00303C]">06</p>
+            </div>
+          </div>
+          <!-- number of assigned task ends -->
+          <!-- discover area starts here -->
+          <div
+            class="bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] pl-5 pr-28 py-2 rounded-xl flex justify-center items-center gap-3"
+          >
+            <div class="border border-dashed border-white">
+              <img src="assets/board.png" alt="Image of the board" />
+            </div>
+            <div>
+              <p class="text-2xl font-medium text-white">
+                Discover Something <br />
+                New Today!
+              </p>
+            </div>
+          </div>
+          <!-- discover area ends here -->
+          <!-- calendar area starts here -->
+          <div class="bg-[#F4F7FF] px-3 py-5 rounded-xl flex items-center">
+            <div class="bg-white rounded-full">
+              <img
+                class="p-3"
+                src="assets/calender.png"
+                alt="Image of the Calendar"
+              />
+            </div>
+            <div>
+              <p class="text-[#00303C] text-xl font-medium">Wed ,<br><span class="font-extrabold">Jul 28 2025</span></p>
+            </div>
+          </div>
+          <!-- calendar area ends here -->
+        </div>
+        <!-- task assigned board ends here -->
+         <hr class="w-[90%] mx-auto border border-[#3752FD33] border-dashed mt-2">
+        <!-- card area starts here -->
+        <div class="grid grid-cols-3 grid-rows-2 gap-2 p-5">
+          <!-- card 1 starts -->
+          <div class="col-span-1 row-span-1 bg-[#F4F7FF] rounded-xl p-4">
+            <!-- company names -->
+            <div class="rounded-md p-3 bg-white w-24">
+              <p class="text-[#00303C]">ShopEase</p>
+            </div>
+            <!-- card titles -->
+            <h1 class="text-xl font-bold text-[#00303C] py-3">
+              Fix Mobile Button Issue
+            </h1>
+            <!-- card description -->
+            <div class="bg-[#FFFFFF] rounded-xl">
+              <p class="text-justify p-3 text-[#000000] opacity-50">
+                Debug using Chrome DevTools, check for overlapping<span
+                  >...</span
+                >
+                <span class="hidden"
+                  >elements, and ensure onClick works properly and ensure
+                  onClick works properly</span
+                >
+              </p>
+            </div>
+            <hr
+              class="border border-[#3752FD33] border-dashed w-[80%] mx-auto mt-3"
+            />
+            <!-- card status -->
+            <div class="flex justify-between items-center py-3">
+              <div>
+                <p class="text-[#00303C] text-sm">
+                  Deadline <br /><span class="text-lg font-medium"
+                    >21 March 2025</span
+                  >
+                </p>
+              </div>
+              <button class="btn utility-btn">Completed</button>
+            </div>
+          </div>
+          <!-- card 1 ends -->
+          <!-- card 2 starts -->
+          <div class="col-span-1 row-span-1 bg-[#F4F7FF] rounded-xl p-4">
+            <!-- company names -->
+            <div class="rounded-md p-3 bg-white w-24">
+              <p class="text-[#00303C]">CloudSync</p>
+            </div>
+            <!-- card titles -->
+            <h1 class="text-xl font-bold text-[#00303C] py-3">Add Dark Mode</h1>
+            <!-- card description -->
+            <div class="bg-[#FFFFFF] rounded-xl">
+              <p class="text-justify p-3 text-[#000000] opacity-50">
+                Store the user's preference in localStorage, update CSS<span
+                  >...</span
+                >
+                <span class="hidden">
+                  variables dynamically, and apply a smooth transition
+                  effect.</span
+                >
+              </p>
+            </div>
+            <hr
+              class="border border-[#3752FD33] border-dashed w-[80%] mx-auto mt-3"
+            />
+            <!-- card status -->
+            <div class="flex justify-between items-center py-3">
+              <div>
+                <p class="text-[#00303C] text-sm">
+                  Deadline <br /><span class="text-lg font-medium"
+                    >21 March 2025</span
+                  >
+                </p>
+              </div>
+              <button class="btn utility-btn">Completed</button>
+            </div>
+          </div>
+          <!-- card 2 ends -->
+          <!-- card 3 starts -->
+          <div class="col-span-1 row-span-1 bg-[#F4F7FF] rounded-xl p-4">
+            <!-- company names -->
+            <div class="rounded-md p-3 bg-white w-24">
+              <p class="text-[#00303C]">SwiftPay</p>
+            </div>
+            <!-- card titles -->
+            <h1 class="text-xl font-bold text-[#00303C] py-3">
+              Optimize Home page 
+            </h1>
+            <!-- card description -->
+            <div class="bg-[#FFFFFF] rounded-xl">
+              <p class="text-justify p-3 text-[#000000] opacity-50">
+                Debug using Chrome DevTools, check for overlapping<span
+                  >...</span
+                >
+                <span class="hidden">
+                  elements, and ensure onClick works properly and ensure onClick
+                  works properly</span
+                >
+              </p>
+            </div>
+            <hr
+              class="border border-[#3752FD33] border-dashed w-[80%] mx-auto mt-3"
+            />
+            <!-- card status -->
+            <div class="flex justify-between items-center py-3">
+              <div>
+                <p class="text-[#00303C] text-sm">
+                  Deadline <br /><span class="text-lg font-medium"
+                    >21 March 2025</span
+                  >
+                </p>
+              </div>
+              <button class="btn utility-btn">Completed</button>
+            </div>
+          </div>
+          <!-- card 3 ends -->
+           <!-- card 4 starts -->
+           <div class="col-span-1 row-span-1 bg-[#F4F7FF] rounded-xl p-4">
+            <!-- company names -->
+            <div class="rounded-md p-3 bg-white w-24">
+              <p class="text-[#00303C]">Meta</p>
+            </div>
+            <!-- card titles -->
+            <h1 class="text-xl font-bold text-[#00303C] py-3">
+                Add new emoji 🤲
+            </h1>
+            <!-- card description -->
+            <div class="bg-[#FFFFFF] rounded-xl">
+              <p class="text-justify p-3 text-[#000000] opacity-50">
+                Debug using Chrome DevTools, check for overlapping<span
+                  >...</span
+                >
+                <span class="hidden">
+                  elements, and ensure onClick works properly and ensure onClick
+                  works properly</span
+                >
+              </p>
+            </div>
+            <hr
+              class="border border-[#3752FD33] border-dashed w-[80%] mx-auto mt-3"
+            />
+            <!-- card status -->
+            <div class="flex justify-between items-center py-3">
+              <div>
+                <p class="text-[#00303C] text-sm">
+                  Deadline <br /><span class="text-lg font-medium"
+                    >21 March 2025</span
+                  >
+                </p>
+              </div>
+              <button class="btn utility-btn">Completed</button>
+            </div>
+          </div>
+            <!-- card 4 ends -->
+             <!-- card 5 starts -->
+             <div class="col-span-1 row-span-1 bg-[#F4F7FF] rounded-xl p-4">
+                <!-- company names -->
+                <div class="rounded-md p-3 bg-white w-28">
+                  <p class="text-[#00303C]">Google LLC</p>
+                </div>
+                <!-- card titles -->
+                <h1 class="text-xl font-bold text-[#00303C] py-3">
+                    Integrate OpenAI API 
+                </h1>
+                <!-- card description -->
+                <div class="bg-[#FFFFFF] rounded-xl">
+                  <p class="text-justify p-3 text-[#000000] opacity-50">
+                    Debug using Chrome DevTools, check for overlapping<span
+                      >...</span
+                    >
+                    <span class="hidden">
+                      elements, and ensure onClick works properly and ensure onClick
+                      works properly</span
+                    >
+                  </p>
+                </div>
+                <hr
+                  class="border border-[#3752FD33] border-dashed w-[80%] mx-auto mt-3"
+                />
+                <!-- card status -->
+                <div class="flex justify-between items-center py-3">
+                  <div>
+                    <p class="text-[#00303C] text-sm">
+                      Deadline <br /><span class="text-lg font-medium"
+                        >21 March 2025</span
+                      >
+                    </p>
+                  </div>
+                  <button class="btn utility-btn">Completed</button>
+                </div>
+              </div>
+              <!-- card 5 ends -->
+               <!-- card 6 starts -->
+               <div class="col-span-1 row-span-1 bg-[#F4F7FF] rounded-xl p-4">
+                <!-- company names -->
+                <div class="rounded-md p-3 bg-white w-24">
+                  <p class="text-[#00303C]">Glassdoar</p>
+                </div>
+                <!-- card titles -->
+                <h1 class="text-xl font-bold text-[#00303C] py-3">
+                    Improve Job searching  
+                </h1>
+                <!-- card description -->
+                <div class="bg-[#FFFFFF] rounded-xl">
+                  <p class="text-justify p-3 text-[#000000] opacity-50">
+                    Debug using Chrome DevTools, check for overlapping<span
+                      >...</span
+                    >
+                    <span class="hidden">
+                      elements, and ensure onClick works properly and ensure onClick
+                      works properly</span
+                    >
+                  </p>
+                </div>
+                <hr
+                  class="border border-[#3752FD33] border-dashed w-[80%] mx-auto mt-3"
+                />
+                <!-- card status -->
+                <div class="flex justify-between items-center py-3">
+                  <div>
+                    <p class="text-[#00303C] text-sm">
+                      Deadline <br /><span class="text-lg font-medium"
+                        >21 March 2025</span
+                      >
+                    </p>
+                  </div>
+                  <button class="btn utility-btn">Completed</button>
+                </div>
+              </div>
+               <!-- card 6 ends -->
+        </div>
+        <!-- card area ends here -->
+      </section>
+      <!-- task section ends here -->
+      <!-- activity section starts here -->
+      <section class="col-span-1 bg-white">
+        <!-- activity header starts here -->
+            <div class="flex flex-col gap-3 items-center py-2">
+                <!-- activity header starts -->
+                <div class="p-4 flex justify-center items-center gap-3">
+                    <img src="assets/activity.png" alt="Image of a Clock">
+                    <h1 class="text-[#00303C] text-xl font-medium">Activity Log</h1>
+                </div>
+                <!-- activity button starts -->
+                <button class="btn utility-btn mx-auto">Clear History</button>  
+            </div>
+        <!-- activity header ends here -->
+         <hr class="border border-[#3752FD33] border-dashed w-[90%] mx-auto mt-2">
+        <!-- history starts here -->
+         <div id="history-bar" class="p-4">
+            <p class="history">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+        </div>
+         <!-- history ends here -->
+        </section>
+      <!-- activity section ends here -->
+    </main>
+    <!-- main ends here -->
   </body>
 </html>
