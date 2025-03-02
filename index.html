@@ -54,12 +54,12 @@
             class="flex justify-between items-center gap-3 bg-[#F4F7FF] rounded-3xl px-4 py-2"
           >
             <img src="assets/checkbox.png" alt="Image of a Checkbox" />
-            <p class="text-3xl font-semibold">9</p>
+            <p id="finished-task" class="text-3xl font-semibold">9</p>
           </div>
           <!-- completed tasks ends -->
           <!-- random background starts -->
           <div>
-            <button class="bg-[#F4F7FF] rounded-full">
+            <button id="random-bg-btn" class="bg-[#F4F7FF] rounded-full">
               <img
                 class="p-2"
                 src="assets/theme-btn.png"
@@ -90,13 +90,13 @@
             </div>
             <div>
               <p class="text-[#00303C] text-lg font-medium">Task Assigned</p>
-              <p class="text-3xl font-bold text-[#00303C]">06</p>
+              <p class="text-3xl font-bold text-[#00303C]">0<span id="assigned-task">6</span></p>
             </div>
           </div>
           <!-- number of assigned task ends -->
           <!-- discover area starts here -->
-          <div
-            class="bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] pl-5 pr-28 py-2 rounded-xl flex justify-center items-center gap-3"
+          <div id="discover-blog"
+            class="bg-gradient-to-tr from-[#3752FD] to-[#9BA8F8] pl-5 pr-28 py-2 rounded-xl flex justify-center items-center gap-3"
           >
             <div class="border border-dashed border-white">
               <img src="assets/board.png" alt="Image of the board" />
@@ -119,7 +119,7 @@
               />
             </div>
             <div>
-              <p class="text-[#00303C] text-xl font-medium">Wed ,<br><span class="font-extrabold">Jul 28 2025</span></p>
+              <p class="text-[#00303C] text-xl font-medium"><span id="day"></span><br><span id="date" class="font-extrabold">Jul 28 2025</span></p>
             </div>
           </div>
           <!-- calendar area ends here -->
@@ -135,7 +135,7 @@
               <p class="text-[#00303C]">ShopEase</p>
             </div>
             <!-- card titles -->
-            <h1 class="text-xl font-bold text-[#00303C] py-3">
+            <h1 id="card-title-1" class="text-xl font-bold text-[#00303C] py-3">
               Fix Mobile Button Issue
             </h1>
             <!-- card description -->
@@ -162,7 +162,7 @@
                   >
                 </p>
               </div>
-              <button class="btn utility-btn">Completed</button>
+              <button id="card-btn-1" class="btn utility-btn">Completed</button>
             </div>
           </div>
           <!-- card 1 ends -->
@@ -173,7 +173,7 @@
               <p class="text-[#00303C]">CloudSync</p>
             </div>
             <!-- card titles -->
-            <h1 class="text-xl font-bold text-[#00303C] py-3">Add Dark Mode</h1>
+            <h1 id="card-title-2" class="text-xl font-bold text-[#00303C] py-3">Add Dark Mode</h1>
             <!-- card description -->
             <div class="bg-[#FFFFFF] rounded-xl">
               <p class="text-justify p-3 text-[#000000] opacity-50">
@@ -198,7 +198,7 @@
                   >
                 </p>
               </div>
-              <button class="btn utility-btn">Completed</button>
+              <button id="card-btn-2" class="btn utility-btn">Completed</button>
             </div>
           </div>
           <!-- card 2 ends -->
@@ -209,7 +209,7 @@
               <p class="text-[#00303C]">SwiftPay</p>
             </div>
             <!-- card titles -->
-            <h1 class="text-xl font-bold text-[#00303C] py-3">
+            <h1 id="card-title-3" class="text-xl font-bold text-[#00303C] py-3">
               Optimize Home page 
             </h1>
             <!-- card description -->
@@ -236,7 +236,7 @@
                   >
                 </p>
               </div>
-              <button class="btn utility-btn">Completed</button>
+              <button id="card-btn-3" class="btn utility-btn">Completed</button>
             </div>
           </div>
           <!-- card 3 ends -->
@@ -247,7 +247,7 @@
               <p class="text-[#00303C]">Meta</p>
             </div>
             <!-- card titles -->
-            <h1 class="text-xl font-bold text-[#00303C] py-3">
+            <h1 id="card-title-4" class="text-xl font-bold text-[#00303C] py-3">
                 Add new emoji 🤲
             </h1>
             <!-- card description -->
@@ -274,7 +274,7 @@
                   >
                 </p>
               </div>
-              <button class="btn utility-btn">Completed</button>
+              <button id="card-btn-4" class="btn utility-btn">Completed</button>
             </div>
           </div>
             <!-- card 4 ends -->
@@ -285,7 +285,7 @@
                   <p class="text-[#00303C]">Google LLC</p>
                 </div>
                 <!-- card titles -->
-                <h1 class="text-xl font-bold text-[#00303C] py-3">
+                <h1 id="card-title-5" class="text-xl font-bold text-[#00303C] py-3">
                     Integrate OpenAI API 
                 </h1>
                 <!-- card description -->
@@ -312,7 +312,7 @@
                       >
                     </p>
                   </div>
-                  <button class="btn utility-btn">Completed</button>
+                  <button id="card-btn-5" class="btn utility-btn">Completed</button>
                 </div>
               </div>
               <!-- card 5 ends -->
@@ -323,7 +323,7 @@
                   <p class="text-[#00303C]">Glassdoar</p>
                 </div>
                 <!-- card titles -->
-                <h1 class="text-xl font-bold text-[#00303C] py-3">
+                <h1 id="card-title-6" class="text-xl font-bold text-[#00303C] py-3">
                     Improve Job searching  
                 </h1>
                 <!-- card description -->
@@ -350,7 +350,7 @@
                       >
                     </p>
                   </div>
-                  <button class="btn utility-btn">Completed</button>
+                  <button id="card-btn-6" class="btn utility-btn">Completed</button>
                 </div>
               </div>
                <!-- card 6 ends -->
@@ -368,18 +368,26 @@
                     <h1 class="text-[#00303C] text-xl font-medium">Activity Log</h1>
                 </div>
                 <!-- activity button starts -->
-                <button class="btn utility-btn mx-auto">Clear History</button>  
+                <button id="clear-btn" class="btn utility-btn mx-auto">Clear History</button>  
             </div>
         <!-- activity header ends here -->
          <hr class="border border-[#3752FD33] border-dashed w-[90%] mx-auto mt-2">
         <!-- history starts here -->
          <div id="history-bar" class="p-4">
-            <p class="history">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+
+        <!-- Incoming Histories of the complete button -->
+
         </div>
          <!-- history ends here -->
         </section>
       <!-- activity section ends here -->
     </main>
     <!-- main ends here -->
+    <script src="utilities/utilities.js"></script>
+    <script src="script/random.js"></script>
+    <script src="script/complete-btn.js"></script>
+    <script src="script/real-time.js"></script>
+    <script src="script/clear-history.js"></script>
+    <script src="script/blog.js"></script>
   </body>
 </html>
